@@ -43,15 +43,41 @@
         }
         main{
             min-height: 50vh;
-            background-color: purple;
-        }
+           
+            width: min(70ch,90%);
+            margin-inline: auto; /*  for putting the text in centre */
+        }     
         .hero-heading{
             font-size: 4rem;
             line-height: 1.1;
-            margin bottom: 10rem ;
-            margin-left: 1rem;
+            margin-bottom: 10rem ;
+            
             margin-top: 2rem;
         }
+        .text{
+            font-size: 1.3rem;
+            text-align: justify;
+            margin-bottom: 2rem;
+        }
+        .item-list > * {
+            list-style-image: url(static/image/arrow.png) ;
+            margin-left: 1.2rem;
+            padding: 0.25rem 0rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .item-list{
+            margin-bottom: 1rem;
+        }
+        footer{
+            background-color: beige;
+            display: flex;
+            padding: 1rem;
+            justify-content:center;
+            color: red;
+            font-weight: bold;
+        }
+        
     </style>
 </head>
 
@@ -69,14 +95,15 @@
         <section>
             <article>
                 <h2 class="hero-heading">Welcome to layout CSS</h2>
-                <P>
-                    today we are going to see example of layout in CSS.
+                <P class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis laboriosam soluta nihil quidem ab, repudiandae voluptas officiis repellendus rerum minus libero necessitatibus aut, veniam ducimus animi, doloribus aspernatur iste quam id ipsum sunt quaerat perspiciatis porro. Perspiciatis non possimus deleniti architecto. Quasi provident harum non eos, unde reprehenderit laudantium quidem assumenda vero ea omnis excepturi expedita culpa obcaecati possimus, delectus iusto porro? Quia expedita, velit explicabo ut nobis incidunt impedit fugit maxime molestiae. Voluptas doloribus molestiae cupiditate, amet eaque eligendi rerum odio fuga libero voluptatum voluptatem quaerat unde tempora, a neque? Exercitationem ex facere asperiores dolores aliquam perspiciatis sapiente veritatis?
                 </P>
-                <ul>
+                <ul class="item-list">
                     <li>Grids</li>
                     <li>Flexbox</li>
                     <li>Mixing both Together</li>
                 </ul>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque amet, alias beatae ex earum, porro et nisi dolorum quam numquam quod ipsa cumque cupiditate. Officiis.</p>
             </article>
               
         </section>
