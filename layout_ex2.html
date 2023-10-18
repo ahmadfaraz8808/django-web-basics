@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout example 2</title>
+    <style>
+        /*reset*/
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(18, 23, 40);
+            color: whitesmoke;
+        }
+       section{
+        min-height: 90vh; /*viewport height*/
+        max-width: 90%;
+        margin-inline: auto;
+       }
+       .logo{
+        width: 3rem;
+        height: 3rem;
+        filter: brightness(2);
+       }
+
+       .nav-link{
+        color: white;
+        text-decoration:none ;
+        font-size: 3rem;
+        font-weight: bolder;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        
+    }
+       header{
+        padding-top: 5rem;
+       }
+       /* h1{
+        font-size: 5rem;
+        color:white ;
+        font-family:Arial, Helvetica, sans-serif ;
+       } */
+       .content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        align-items: center;
+        
+        height: 90vh;
+    }
+       .hero{
+        display: grid;
+        justify-items: center;
+        
+       }
+
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <header>
+                <nav>
+                    <a href="#" class="nav-link">
+                        <img src="static/image/logo.png" alt="logo" class="logo">
+                        Kinnectric
+                    </a>
+                </nav>
+            </header>
+            <div class="content">
+                <div class="col"></div>
+                <h1>Always Stay Connected</h1>
+                <button>Learn More</button>
+                <div class="col hero">
+                    <img src="static/image/tree.jpg" alt="image1">
+                </div>
+            </div>
+        </section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+    </main>
+    
+</body>
+</html>
