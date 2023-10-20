@@ -21,15 +21,15 @@
         margin-inline: auto;
        }
        .logo{
-        width: 3rem;
-        height: 3rem;
+        width: 2rem;
+        height: 2rem;
         filter: brightness(2);
        }
 
        .nav-link{
         color: white;
         text-decoration:none ;
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: bolder;
         font-family: Arial, Helvetica, sans-serif;
         display: flex;
@@ -40,11 +40,7 @@
        header{
         padding-top: 5rem;
        }
-       /* h1{
-        font-size: 5rem;
-        color:white ;
-        font-family:Arial, Helvetica, sans-serif ;
-       } */
+      
        .content{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -54,20 +50,58 @@
         height: 90vh;
     }
        .hero{
-        display: grid;
+        /* display: grid; */
+        flex-wrap:wrap ;
         justify-items: center;
         
        }
        .hero img{
-        width: 600px;
-        height: 600px;
+        width: 500px;
+        height: 500px;
         object-fit: cover;
         border-radius: 5rem;
+        box-shadow:-20px 5px 100px #00f;
+       }
+       .col{
+        display: flex;
+        
+        flex-direction: column;
+        height: 500px;
+        justify-content: center;
+        
        }
        .col h1{
-        font-size: 8rem;
+        font-size: 5rem;
+        font-family: sans-serif;
+        line-height: 1;
+        
        }
+       .title-wrapper{
+        flex-grow: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+       }
+       .btn-wrapper{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: flex;
+              
+       }
+       
        .col button{
+        font-size: 1.6rem;
+        padding: 1.75rem ;
+        
+        border-radius: 3rem;
+
+        width: 230px;
+        font-weight: bolder;
+        border: none;
+        background-color: red;
+        background-image: linear-gradient(90deg,rgb(164,36,164),rgb(198,56,79));
+              
 
        }
     </style>
@@ -85,7 +119,10 @@
             </header>
             <div class="content">
                 <div class="col">
+                    <div class="title-wrapper">
                 <h1>Always Stay Connected</h1>
+                </div>
+                <div class="btn-wrapper"></div>
                 <button>Learn More</button>
             </div>
                 <div class="col hero">
