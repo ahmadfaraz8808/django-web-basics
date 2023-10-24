@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+    <style>
+        *{
+            margin:0rem;
+            padding:0rem;
+            box-sizing: border-box;
+            list-style: none;
+
+
+        }
+        html{
+            color-scheme: light dark;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size:1.25rem;
+            line-height: 1.5;
+
+        }
+        header{
+            background-color: gray;
+            padding: 0.5rem;
+            /* list-style: none; */
+        }
+        .nav-list{
+            display:flex;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+        *.nav-list a:hover{
+            color: yellow;
+        }
+        main{
+            min-height: 60vh;
+            width: (50ch,70%);
+            margin-inline: auto;
+        }
+        .hero-heading{
+            justify-content: center;
+            display: flex;
+            font-size: 4rem;
+            line-height: 4rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            
+
+        }
+        .text{
+            text-align: justify;
+            font-size: 1.2rem ;
+            margin-bottom: 2rem;
+            padding: 0.55rem;
+            
+        }
+        .item-list >*{
+            list-style-image: url(static/image/arrow.png);
+            font-weight:bold;
+            font-size: 1.5rem;
+            padding:0.55rem 0rem;
+            margin-left: 1.5rem;
+            /* margin-bottom: 1rem; */
+        }
+        .item-list{
+            margin-bottom: 1rem;
+        }
+        footer{
+            background-color: beige;
+            color: brown;
+            font-weight: bolder;
+            padding: 1rem;
+            justify-content: center;
+            display: flex ;
+        }
+
+
+
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#">layout1</a></li>
+                <li><a href="#">layout2</a></li>
+                <li><a href="#">layout3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2 class="hero-heading">Welcome to layout CSS</h2>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Sit reprehenderit saepe reiciendis iure iste illo eveniet
+                    quas maxime assumenda soluta dicta fugiat dolores aliquam
+                    odio a exercitationem quos ab in, commodi nemo natus adipisci
+                    nobis obcaecati. Voluptatibus, tenetur sit? Reiciendis iure 
+                    neque maiores dicta voluptatibus eos modi labore nihil delectus!
+                </p>
+                <ul class="item-list">
+                    <li>Grid</li>
+                    <li>Flexbox</li>
+                    <li>Mixing both Together</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                     Magni dicta consequatur tenetur autem molestias. A!</p>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;Digipodium 2023-All rights reserved</p>
+          
+    </footer>       
+   
+
+    
+</body>
+</html>
