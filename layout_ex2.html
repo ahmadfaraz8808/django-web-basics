@@ -138,6 +138,47 @@
         /* .kinnectric{
             color: blueviolet;
         } */
+        .pg3grid{
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            align-items: center;
+        }
+        .pg3heading{
+            font-size: 2.5rem;
+            font-family: Arial, Helvetica, sans-serif;
+            color: blueviolet;
+            /* margin-bottom: 7rem; */
+            display: flex;
+            flex-direction: column;
+            align-items:flex-start;
+            padding-bottom:4rem ;
+
+            
+        }
+        .para1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            /* text-align: left; */
+            
+        }
+        .para2{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:1.3rem;
+            margin-bottom: 5.5rem;
+            text-align: left;
+        }
+        .pg3image{
+            /* width: 500px;
+            height: 600px; */
+            /* object-fit: cover; */
+            /* border-radius: 5rem ; */
+            /* box-shadow: -20px 5px 100px ; */
+            margin-bottom: 3rem;
+           
+        }
+        
     </style>
 </head>
 <body>
@@ -173,8 +214,17 @@
             </p>
         </section>
         <section>
-            
-
+           <div class="pg3grid">
+            <div class="column">
+            <div class="pg3heading">
+                <h2>Connect with Friends</h2>
+            </div>
+            <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p class="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias cupiditate velit pariatur fugit.</p>
+            </div>
+            <div class="pg3image">
+            <img src="static/image/phone.jpg" alt="image2"></div>
+           </div>
         </section>
         <section></section>
         <section></section>
