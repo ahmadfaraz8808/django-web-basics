@@ -1,186 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>layout example 2</title>
     <style>
         /*reset*/
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        body{
+
+        body {
             background-color: rgb(18, 23, 40);
             color: whitesmoke;
         }
-        section{
-            min-height: 90vh; /*viewport height*/
+
+        section {
+            min-height: 90vh;
+            /*viewport height*/
             max-width: 90%;
             margin-inline: auto;
         }
-        .logo{
+
+        .logo {
             width: 2rem;
             height: 2rem;
             filter: brightness(2);
         }
-        
-        .nav-link{
+
+        .nav-link {
             color: white;
-            text-decoration:none ;
+            text-decoration: none;
             font-size: 2rem;
             font-weight: bolder;
             font-family: Arial, Helvetica, sans-serif;
             display: flex;
             gap: 1rem;
             align-items: center;
-            
+
         }
-        header{
+
+        header {
             padding-top: 5rem;
         }
-        
-        .content{
+
+        .content {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 1rem;
             align-items: center;
-            
+
             height: 90vh;
         }
-        .hero{
+
+        .hero {
             /* display: grid; */
-            flex-wrap:wrap ;
+            flex-wrap: wrap;
             justify-items: center;
-            
+
         }
-        .hero img{
+
+        .hero img {
             width: 500px;
             height: 500px;
             object-fit: cover;
             border-radius: 5rem;
-            box-shadow:-20px 5px 100px #00f;
+            box-shadow: -20px 5px 100px #00f;
         }
-        .col{
+
+        .col {
             display: flex;
-            
+
             flex-direction: column;
             height: 500px;
             justify-content: center;
-            
+
         }
-        .col h1{
+
+        .col h1 {
             font-size: 5rem;
             font-family: sans-serif;
             line-height: 1;
-            
+
         }
-        .title-wrapper{
+
+        .title-wrapper {
             flex-grow: 2;
             display: flex;
             flex-direction: column;
             justify-content: end;
         }
-        .btn-wrapper{
+
+        .btn-wrapper {
             display: flex;
             flex-direction: column;
             flex-grow: 1;
             justify-content: flex;
-            
+
         }
-        
-        .col button{
+
+        .col button {
             font-size: 1.6rem;
-            padding: 1.75rem ;
-            
+            padding: 1.75rem;
+
             border-radius: 3rem;
-            
+
             width: 230px;
             font-weight: bolder;
             border: none;
             background-color: red;
-            background-image: linear-gradient(90deg,rgb(164,36,164),rgb(198,56,79));
-            
-            
+            background-image: linear-gradient(90deg, rgb(164, 36, 164), rgb(198, 56, 79));
+
+
         }
-        .heading2{
-            justify-content:center;
+
+        .heading2 {
+            justify-content: center;
             text-align: center;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 3.5rem;
             /* padding: 7rem;  */
-            
-            width: min(25ch,90%);
+
+            width: min(25ch, 90%);
             /* flex-direction: column; */
             line-height: 1.2;
             margin-top: 10rem;
             margin-bottom: 2rem;
             margin-left: 10rem;
-            
-            
+
+
         }
-        .heading2 span{
+
+        .heading2 span {
             color: blueviolet;
         }
-        .pg2p1{
+
+        .pg2p1 {
             display: flex;
             justify-content: center;
             text-align: center;
-            font-family:Arial, Helvetica, sans-serif ;
+            font-family: Arial, Helvetica, sans-serif;
             font-size: 1.1rem;
-            width:(ch,90%) ;
+            width: (ch, 90%);
             margin-left: 7rem;
             margin-right: 7rem;
             margin-top: 3rem;
-            
+
         }
+
         /* .kinnectric{
             color: blueviolet;
         } */
-        .pg3grid{
-            display:grid;
+        .pg3grid {
+            display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 1rem;
             align-items: center;
         }
-        .pg3heading{
+
+        .pg3heading {
             font-size: 2.5rem;
             font-family: Arial, Helvetica, sans-serif;
             color: blueviolet;
             /* margin-bottom: 7rem; */
             display: flex;
             flex-direction: column;
-            align-items:flex-start;
-            padding-bottom:4rem ;
+            align-items: flex-start;
+            padding-bottom: 4rem;
 
-            
+
         }
-        .para1{
+
+        .para1 {
             font-family: Arial, Helvetica, sans-serif;
             font-size: 1.3rem;
             margin-bottom: 1.5rem;
             /* text-align: left; */
-            
+
         }
-        .para2{
+
+        .para2 {
             font-family: Arial, Helvetica, sans-serif;
-            font-size:1.3rem;
+            font-size: 1.3rem;
             margin-bottom: 5.5rem;
             text-align: left;
         }
-        .pg3image{
+
+        .pg3image {
             /* width: 500px;
             height: 600px; */
             /* object-fit: cover; */
             /* border-radius: 5rem ; */
             /* box-shadow: -20px 5px 100px ; */
             margin-bottom: 3rem;
-           
+            border-radius: 50px;
+            /* color: white; */
+
         }
+
+        .pg4grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 1rem;
+
+        }
+
+        .pg4image {
+            border-radius: 50px;
+            height: px;
+
+        }
+
+        .pg4heading {
+            color: blueviolet;
+            font-size: 2.5rem;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 3.5rem;
+
+        }
+
+        .para3 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+
+        }
+
+        .para4 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .pg5image {
+            /* width: 500px; */
+            /* height: 600px; */
+            /* border-radius: 100px; */
+
+        }
+
+        .pg6grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+        }
+        .pg6heading2{
+            color: blueviolet;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2rem;
+            margin-bottom:2rem;
+            margin-left: 6.5rem;
+            /* display: flex;
+            align-items: center; */
+            
+
+        }
+        .pg6para{
+            line-height: 1.4rem;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 6.5rem;
+        }
+        .nav-link2{
+            color: white;
+            text-decoration: none;
+            font-size: 2rem;
+            font-weight: bolder;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            gap: 1rem;
+            align-items:center;
+            margin-bottom: 12.4rem;
+        }
+        .lilogo{
+            height: 40px;
+            margin-left: 6.5rem;
+            margin-top: 2rem;
+            
+            
+        }
+        .iglogo{
+            height: 40px;
+            
+            
+        }
+        .fblogo{
+            height: 35px;
+
+        }
+        .twlogo{
+            height: 40px;
+        }
+
         
+        
+
+
     </style>
 </head>
+
 <body>
     <main>
         <section>
@@ -209,27 +333,90 @@
             <h2 class="heading2">
                 <span>Kinnectric</span> is a startup looking to change the way people connect.
             </h2>
-            <p class="pg2p1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, fuga eveniet velit dolores quasi dolor mollitia aspernatur, excepturi nobis neque suscipit asperiores animi reiciendis inventore necessitatibus praesentium provident aut sed atque quam aliquam soluta ipsa! Perspiciatis quia impedit repellendus fuga Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, autem.
-                
+            <p class="pg2p1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, fuga eveniet velit
+                dolores quasi dolor mollitia aspernatur, excepturi nobis neque suscipit asperiores animi reiciendis
+                inventore necessitatibus praesentium provident aut sed atque quam aliquam soluta ipsa! Perspiciatis quia
+                impedit repellendus fuga Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, autem.
+
             </p>
         </section>
         <section>
-           <div class="pg3grid">
-            <div class="column">
-            <div class="pg3heading">
-                <h2>Connect with Friends</h2>
+            <div class="pg3grid">
+                <div class="column">
+                    <div class="pg3heading">
+                        <h2>Connect with Friends</h2>
+                    </div>
+                    <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias cupiditate velit
+                        pariatur fugit.</p>
+                </div>
+                <div class="pg3image">
+                    <img src="static/image/phone.jpg" alt="image2">
+                </div>
             </div>
-            <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <p class="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias cupiditate velit pariatur fugit.</p>
-            </div>
-            <div class="pg3image">
-            <img src="static/image/phone.jpg" alt="image2"></div>
-           </div>
         </section>
-        <section></section>
-        <section></section>
-        <section></section>
+        <section>
+            <div class="pg4grid">
+                <div class="pg4column">
+                    <div class="pg4image">
+                        <img src="static/image/teen-smartphone-inline-1l.jpg" alt="image3">
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="pg4heading">Keep in Touch</h2>
+                    <p class="para3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, placeat
+                        harum
+                        Aliquid mollitia blanditiis explicabo quod? Explicabo, deserunt.</p>
+                    <p class="para4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, labore!</p>
+                </div>
+
+
+            </div>
+        </section>
+        <section>
+            <div class="pg3grid">
+                <div class="column">
+                    <div class="pg3heading">
+                        <h2>Build Your Social Base</h2>
+                    </div>
+                    <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias cupiditate velit
+                        pariatur fugit.</p>
+                </div>
+                <div class="pg5image">
+                    <img src="static/image/phonepg5.jpg" alt="image4">
+                </div>
+            </div>
+
+        </section>
+        <section>
+            <div class="pg6grid">
+
+                <div><a href="#" class="nav-link2">
+                        <img src="static/image/logo.png" alt="logo" class="logo2">
+                        Kinnectric
+                    </a>
+                </div>
+                <div class="pg6heading">
+                    <h2 class="pg6heading2">Connect</h2>
+                    <p class="pg6para">123-456-7890 <br>
+                        123 Anywhere St.,Any City,ST 12345 <br>
+                        hello@reallygreatesite.com <br>
+                    </p>
+                    <img class="lilogo" src="static/image/linkedin (2).svg" alt="linkedinlogo">
+                    <img class="iglogo" src="static/image/instagram.svg" alt="instagramlogo">
+                    <img class="fblogo" src="static/image/facebook-f (1).svg" alt="facebooklogo">
+                    <img class="twlogo" src="static/image/twitter.svg" alt="twitterlogo">
+                </div>
+
+
+
+
+            </div>
+        </section>
     </main>
-    
+
 </body>
+
 </html>
